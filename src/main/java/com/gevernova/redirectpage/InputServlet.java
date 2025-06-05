@@ -16,7 +16,7 @@ public class InputServlet extends HttpServlet {
 
         if (name != null && !name.isEmpty()) {
             // Redirect with query param
-            response.sendRedirect("details?name=" + name);
+            response.sendRedirect("details?name=" + name); //URL Rewriting
         } else {
             response.sendRedirect("input.html"); // Go back to form if empty
         }
